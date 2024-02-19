@@ -23,7 +23,7 @@ try:
     )
 
     # Write to file
-    with open("new_zealand_jobs_list", "w") as file:
+    with open("new_zealand_jobs_list", "w", encoding="utf-8") as file:
         for title in job_titles:
             file.write(title.text + "\n")
 
